@@ -1,4 +1,6 @@
 <?php
+use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -11,10 +13,25 @@
 |
 */
 
+Auth::routes();
+
+Route::put('/dashboard/password/update', 'PasswordController@update');
+Route::get('/dashboard/password','PasswordController@edit');
+
+Route::resource('dashboard', 'DashboardController');
+
+Route::get('/dashboard/act_done/{id}','DashboardController@act_done');
+Route::get('/dashboard/act_cancel/{id}','DashboardController@act_cancel');
+
+
+// Belajar Doang
 Route::get('/', function () {
-    return redirect('/about');
+    return redirect('login');
 });
 
-Route::get('/about', function () {
-    return 'bla bla bla';
-});
+
+
+
+
+
+
