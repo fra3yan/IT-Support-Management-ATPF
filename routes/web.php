@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Belajar Doang
+Route::get('/', function () {
+    return redirect('login');
+});
+
+
 Auth::routes();
 
 Route::put('/dashboard/password/update', 'PasswordController@update');
@@ -24,10 +30,7 @@ Route::get('/dashboard/act_done/{id}','DashboardController@act_done');
 Route::get('/dashboard/act_cancel/{id}','DashboardController@act_cancel');
 
 
-// Belajar Doang
-Route::get('/', function () {
-    return redirect('login');
-});
+
 
 
 
