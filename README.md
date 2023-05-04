@@ -1,3 +1,3 @@
-# IT-Support-Management-ATPF
-Aplikasi pendataan tugas dan lainnya untuk IT Support @ATPF
+# IT-Support-Management-APPS
+Aplikasi pendataan tugas dan lainnya untuk IT Support Berbasis laravel
 
